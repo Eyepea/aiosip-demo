@@ -3,9 +3,9 @@ import logging
 import aiosip
 
 sip_config = {
-    'srv_ip': '217.182.114.36',
-    'srv_host': 'qd.allocloud.com',
-    'srv_port': 10060,
+    'srv_ip': 'X.X.X.X',
+    'srv_host': 'sip.test.com',
+    'srv_port': 5060,
     'user': 'XXXX',
     'pwd': 'XXXXX',
 }
