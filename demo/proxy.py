@@ -18,10 +18,6 @@ async def notify(dialog, message):
 class Container(api_hour.Container):
     def __init__(self, config, worker, loop):
         super().__init__(config, worker, loop)
-        LOG.info('Python version: %s', sys.version)
-
-        # if self.config is None:  # Remove this line if you don't want to use API-Hour config file
-        #     raise ValueError('An API-Hour config dir is needed.')
 
         r = aiosip.ProxyRouter()
         r['notify'] = notify
